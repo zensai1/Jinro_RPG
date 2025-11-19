@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:player_head",
+      "components": {},
+      "count": 1
+    },
+    "title": {
+      "text": "最大の違い　　　　　　　　　　　　",
+      "color": "white",
+      "bold": true,
+      "italic": false
+    },
+    "description": [
+      {
+        "text": "本家と異なり看板ではなくプレイヤーヘッドを\n",
+        "color": "gray",
+        "italic": false
+      },
+      {
+        "text": "右クリックすることで占いなどを行うことが\nできます",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "background": "minecraft:block/iron_block",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "parent": "jinro_rpg:diff_original/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

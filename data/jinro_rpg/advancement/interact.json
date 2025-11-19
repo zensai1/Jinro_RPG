@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "example": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": {
+          "type": "minecraft:player"
+        },
+        "entity": {
+          "type": "minecraft:interaction"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "jinro_rpg:system/interact/act"
+  }
+}

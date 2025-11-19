@@ -1,0 +1,68 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_axe",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "人狼の斧 ",
+                "color": "dark_red",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "殴って使用",
+                  "type": "text",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "プレイヤーを一撃で倒せる",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "※一回で壊れる",
+                  "color": "red",
+                  "italic": false
+                },
+                {
+                  "text": "※人狼以外購入できない",
+                  "color": "red",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:damage": 130
+              }
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{Drop:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

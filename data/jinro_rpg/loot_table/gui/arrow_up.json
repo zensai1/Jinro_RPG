@@ -1,0 +1,27 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "↑",
+                "type": "text",
+                "color": "red",
+                "italic": false
+              },
+              "target": "custom_name"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "functions": []
+}

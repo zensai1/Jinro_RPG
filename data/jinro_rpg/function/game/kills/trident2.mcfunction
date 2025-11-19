@@ -1,0 +1,35 @@
+#>jinro_rpg:game/kills/trident
+
+
+##距離の測定    
+    execute at @s positioned as @p[tag=Perpetrator] run function km_distance:as_to_at
+    function jinro_rpg:game/calc
+
+
+##メイン
+    $execute if entity @a[tag=Direct] run tellraw @a[gamemode=spectator] [{"color":"red","text":"[人狼RPG] "},{"color":"white","player":"$(PerpetratorID)"}," ",{"color":"white","selector":"@e[scores={Znsi.ID=$(Perpetrator)},type=marker]"},{"color":"gray","text":"("},{"color":"white","text":"怨念の槍"},{"color":"gray","text":") ➡ "},{"color":"white","player":"$(VictimID)"}," ",{"color":"white","selector":"@e[type=marker,scores={Znsi.ID=$(Victim)}]"},{"color":"white","text":" 死亡"}]
+    $execute if entity @a[tag=Throw] run tellraw @a[gamemode=spectator] [{"color":"red","text":"[人狼RPG] "},{"color":"white","player":"$(PerpetratorID)"}," ",{"color":"white","selector":"@e[scores={Znsi.ID=$(Perpetrator)},type=marker]"},{"color":"gray","text":"("},{"color":"white","text":"怨念の槍"},{"color":"gray","text":":"},{"color":"gray","score":{"name":"#Integer","objective":"Znsi.Distance"}},{"color":"gray","text":"."},{"color":"gray","score":{"name":"#Decimal","objective":"Znsi.Distance"}},{"color":"gray","text":"m"},{"color":"gray","text":") ➡ "},{"color":"white","player":"$(VictimID)"}," ",{"color":"white","selector":"@e[type=marker,scores={Znsi.ID=$(Victim)}]"},{"color":"white","text":" 死亡"}]
+
+
+##双子
+    execute if entity @s[tag=Twins] as @a[tag=Twins,gamemode=adventure] at @s run function jinro_rpg:game/kills/shobo
+    #execute if entity @s[tag=Twins] run tellraw @a[tag=op] "[Debug] 今死んだのは双子"
+
+
+##道化師
+    #execute if entity @s[tag=Clown] run tellraw @a[tag=op] "[Debug] 道化師が死んだンゴ"
+    execute if entity @s[tag=Clown] as @a[tag=Slayer] at @s run summon item ~ ~ ~ {Item:{id:"bundle"},Tags:[DeathBox]}
+    execute if entity @s[tag=Clown] positioned as @a[tag=Slayer] run data modify entity @e[type=item,tag=DeathBox,limit=1] Item.components."minecraft:bundle_contents" set from storage jinro_rpg: Game.Clown.Reward
+
+
+##内部処理
+    scoreboard players set @s Auto.Mute 2
+    scoreboard players set @s Znsi.MoveCH 2
+    tag @e[type=marker,tag=Sign_stand] remove select
+    tag @a remove Following
+    tag @a remove Slayer
+    tag @a remove Perpetrator
+    tag @a remove Direct
+    tag @a remove Throw
+    tag @e[type=marker] remove Perpetrator
+    

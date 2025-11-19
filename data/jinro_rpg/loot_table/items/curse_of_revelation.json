@@ -1,0 +1,63 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "天啓の呪符",
+                "color": "white",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "Qで使用",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "使ってから次の朝が来るまで",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "自分が占われたこと",
+                  "color": "white",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": "を察知できる",
+                      "color": "gray",
+                      "italic": false
+                    }
+                  ]
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantment_glint_override": true
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{Drop:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

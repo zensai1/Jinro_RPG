@@ -1,0 +1,46 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_stained_glass_pane",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "戦闘",
+                "type": "text",
+                "color": "red",
+                "italic": false
+              },
+              "target": "custom_name"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "左クリックで使用",
+                  "type": "text",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "戦闘用のアイテムの値段を変更します。",
+                  "type": "text",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "functions": []
+}

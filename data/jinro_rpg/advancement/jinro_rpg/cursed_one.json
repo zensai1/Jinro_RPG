@@ -1,0 +1,58 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:ominous_bottle",
+      "count": 1
+    },
+    "title": {
+      "text": "呪われ者　　　　　　　　　　　",
+      "color": "red",
+      "bold": true,
+      "italic": false
+    },
+    "description": [
+      {
+        "text": "勝利条件：人狼の全滅又は村人の全滅\n",
+        "color": "gold",
+        "italic": false
+      },
+      {
+        "text": "占い結果：",
+        "extra": [
+          {
+            "text": "村人(呪われ前)\n",
+            "color": "blue",
+            "italic": false
+          },
+          {
+            "text": "占い結果：",
+            "extra": [
+              {
+                "text": "人狼(呪われ後)\n",
+                "color": "dark_red",
+                "italic": false
+              }
+            ],
+            "color": "green"
+          }
+        ],
+        "color": "green",
+        "italic": false
+      },
+      {
+        "text": "最初は村人だが人狼の斧で殺されると人狼になる",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "background": "minecraft:block/iron_block",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "parent": "jinro_rpg:jinro_rpg/merchant",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

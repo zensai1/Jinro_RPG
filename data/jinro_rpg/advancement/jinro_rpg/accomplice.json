@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:gunpowder",
+      "count": 1
+    },
+    "title": {
+      "text": "共犯者　　　　　　　　　　　　",
+      "color": "gray",
+      "bold": true,
+      "italic": false
+    },
+    "description": [
+      {
+        "text": "勝利条件：村人の全滅\n",
+        "color": "gold",
+        "italic": false
+      },
+      {
+        "text": "占い結果：",
+        "extra": [
+          {
+            "text": "村人\n",
+            "color": "blue",
+            "italic": false
+          }
+        ],
+        "color": "green"
+      },
+      {
+        "text": "人狼陣営だが誰が人狼かわからない",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "background": "minecraft:block/iron_block",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "parent": "jinro_rpg:jinro_rpg/wolf",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

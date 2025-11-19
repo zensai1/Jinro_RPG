@@ -1,0 +1,59 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:skeleton_skull",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "スケルトンの数",
+                "type": "text",
+                "color": "dark_gray",
+                "italic": false
+              },
+              "target": "custom_name"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "現在の沸き数：",
+                  "type": "text",
+                  "extra": [
+                    {
+                      "score": {
+                        "objective": "Znsi.Skeleton",
+                        "name": "***"
+                      },
+                      "type": "score",
+                      "extra": [
+                        {
+                          "text": "体",
+                          "type": "text",
+                          "color": "white",
+                          "italic": false
+                        }
+                      ],
+                      "color": "white",
+                      "italic": false
+                    }
+                  ],
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "functions": []
+}

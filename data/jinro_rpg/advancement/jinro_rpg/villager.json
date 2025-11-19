@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:poppy",
+      "count": 1
+    },
+    "title": {
+      "text": "村人　　　　　　　　　　　　　",
+      "color": "blue",
+      "bold": true,
+      "italic": false
+    },
+    "description": [
+      {
+        "text": "勝利条件：人狼の全滅\n",
+        "color": "gold",
+        "italic": false
+      },
+      {
+        "text": "占い結果：",
+        "extra": [
+          {
+            "text": "村人\n",
+            "color": "blue",
+            "italic": false
+          }
+        ],
+        "color": "green"
+      },
+      {
+        "text": "特殊能力なし",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "background": "minecraft:block/iron_block",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "parent": "jinro_rpg:jinro_rpg/villager_camp",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

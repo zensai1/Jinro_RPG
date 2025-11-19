@@ -1,0 +1,25 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "type": "minecraft:player",
+              "equipment": {
+                "mainhand": {
+                  "items": [
+                    "minecraft:nether_star"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "jinro_rpg:game/kills/holy_cross"
+    }
+  }
+  

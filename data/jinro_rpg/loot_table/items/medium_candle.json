@@ -1,0 +1,98 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:candle",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "霊媒師の蝋燭",
+                "color": "white",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "右クリックで使用",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "1人",
+                  "extra": [
+                    {
+                      "text": "を選び生死を確認する",
+                      "color": "gray",
+                      "italic": false
+                    }
+                  ],
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "text": "死亡していれば",
+                  "extra": [
+                    {
+                      "text": "役職",
+                      "extra": [
+                        {
+                          "text": "も見ることができる",
+                          "color": "gray",
+                          "italic": false
+                        }
+                      ],
+                      "color": "white",
+                      "italic": false
+                    }
+                  ],
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:consumable": {
+                  "consume_seconds": 0,
+                  "animation": "block",
+                  "sound": "minecraft:intentionally_empty",
+                  "has_consume_particles": false
+                },
+                "minecraft:use_remainder": {
+                  "id": "minecraft:candle",
+                  "components": {
+                    "minecraft:item_name": {
+                      "text": "霊媒師の蝋燭",
+                      "color": "white",
+                      "italic": false
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{Drop:1b}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

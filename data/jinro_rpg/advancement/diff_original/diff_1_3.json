@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:compass",
+      "count": 1
+    },
+    "title": {
+      "text": "道しるべ　　　　　　　　　",
+      "color": "white",
+      "bold": true
+    },
+    "description": [
+      {
+        "text": "ゲーム開始と同時に開始地点を指す\n",
+        "color": "gray",
+        "italic": false
+      },
+      {
+        "text": "コンパスが手に入ります",
+        "type": "text",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "background": "minecraft:block/iron_block",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "parent": "jinro_rpg:diff_original/diff_1_2",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

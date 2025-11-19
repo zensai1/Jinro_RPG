@@ -1,0 +1,59 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "お助けBook",
+                "color": "white",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "右クリックで使用",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:consumable": {
+                  "consume_seconds": 0,
+                  "animation": "block",
+                  "sound": "minecraft:intentionally_empty",
+                  "has_consume_particles": false
+                },
+                "minecraft:use_remainder": {
+                  "id": "minecraft:book",
+                  "components": {
+                    "minecraft:item_name": {
+                      "text": "クイックチャット",
+                      "color": "white",
+                      "italic": false
+                    },
+                    "minecraft:item_model": "minecraft:knowledge_book"
+                  }
+                },
+                "minecraft:item_model": "minecraft:knowledge_book"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

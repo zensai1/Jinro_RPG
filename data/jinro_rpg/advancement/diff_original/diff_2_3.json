@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:diamond_hoe",
+      "components": {},
+      "count": 1
+    },
+    "title": {
+      "text": "新役職③　　　　　　　　　　　　",
+      "color": "white",
+      "bold": true,
+      "italic": false
+    },
+    "description": [
+      {
+        "text": "本家にはない役職として",
+        "extra": [
+          {
+            "text": "死神",
+            "extra": [
+              {
+                "text": "があります",
+                "color": "gray",
+                "italic": false
+              }
+            ],
+            "color": "dark_aqua",
+            "italic": false
+          }
+        ],
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "background": "minecraft:block/iron_block",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "parent": "jinro_rpg:diff_original/diff_2",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

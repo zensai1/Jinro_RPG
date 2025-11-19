@@ -1,0 +1,47 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:bundle",
+      "count": 1
+    },
+    "title": {
+      "text": "商人　　　　　　　　　　　　",
+      "color": "green",
+      "bold": true,
+      "italic": false
+    },
+    "description": [
+      {
+        "text": "勝利条件：人狼の全滅\n",
+        "color": "gold",
+        "italic": false
+      },
+      {
+        "text": "占い結果：",
+        "extra": [
+          {
+            "text": "村人\n",
+            "color": "blue",
+            "italic": false
+          }
+        ],
+        "color": "green",
+        "italic": false
+      },
+      {
+        "text": "ショップからアイテムを少し安く買える",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "background": "minecraft:block/iron_block",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "parent": "jinro_rpg:jinro_rpg/bakery",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

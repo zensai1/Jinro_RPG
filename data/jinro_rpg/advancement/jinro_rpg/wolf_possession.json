@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:wither_rose",
+      "count": 1
+    },
+    "title": {
+      "text": "狼憑き　　　　　　　　　　　　",
+      "color": "dark_purple",
+      "bold": true,
+      "italic": false
+    },
+    "description": [
+      {
+        "text": "勝利条件：人狼の全滅\n",
+        "color": "gold",
+        "italic": false
+      },
+      {
+        "text": "占い結果：",
+        "extra": [
+          {
+            "text": "人狼\n",
+            "color": "dark_red",
+            "italic": false
+          }
+        ],
+        "color": "green"
+      },
+      {
+        "text": "占われたとき人狼と表示される",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "background": "minecraft:block/iron_block",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "parent": "jinro_rpg:jinro_rpg/villager",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:knowledge_book",
+      "count": 1
+    },
+    "title": {
+      "text": "お助けメニュー　　　　　　",
+      "color": "white",
+      "bold": true
+    },
+    "description": [
+      {
+        "text": "ゲーム中に",
+        "extra": [
+          {
+            "keybind": "key.quickActions"
+          },
+          {
+            "text": "キーでお助けメニューを開くことができます\n"
+          }
+        ],
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "background": "minecraft:block/iron_block",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "parent": "jinro_rpg:diff_original/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

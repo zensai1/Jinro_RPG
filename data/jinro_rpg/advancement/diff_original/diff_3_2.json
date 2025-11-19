@@ -1,0 +1,34 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:knowledge_book",
+      "count": 1
+    },
+    "title": {
+      "text": "お助けメニュー①：役職配分　　　",
+      "color": "white",
+      "bold": true
+    },
+    "description": [
+      {
+        "text": "ゲーム中、お助けメニューから\n",
+        "color": "gray",
+        "italic": false
+      },
+      {
+        "text": "役職の配分を確認できます",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "background": "minecraft:block/iron_block",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "parent": "jinro_rpg:diff_original/diff_3",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

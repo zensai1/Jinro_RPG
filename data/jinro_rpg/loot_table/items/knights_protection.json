@@ -1,0 +1,120 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_horse_armor",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "騎士の加護",
+                "color": "white",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "プレイヤーヘッドに右クリックで使用 ",
+                  "color": "green",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": "(",
+                      "extra": [
+                        {
+                          "text": "夜限定",
+                          "extra": [
+                            {
+                              "text": ")",
+                              "color": "gray",
+                              "italic": false
+                            }
+                          ],
+                          "color": "blue",
+                          "italic": false
+                        }
+                      ],
+                      "color": "gray",
+                      "italic": false
+                    }
+                  ]
+                },
+                {
+                  "text": "使用した夜の間",
+                  "color": "gray",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": "一度だけ",
+                      "color": "white",
+                      "italic": false,
+                      "extra": [
+                        {
+                          "text": "対象を",
+                          "color": "gray",
+                          "italic": false
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "致命傷から守ることができる",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "護衛が成功すると",
+                  "extra": [
+                    {
+                      "text": "翌朝に通知",
+                      "extra": [
+                        {
+                          "text": "が届く",
+                          "color": "gray",
+                          "italic": false
+                        }
+                      ],
+                      "color": "white",
+                      "italic": false
+                    }
+                  ],
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "※自分には使用できない",
+                  "color": "red",
+                  "italic": false
+                },
+                {
+                  "text": "※人狼にも使用できるが効果はない",
+                  "color": "red",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:attribute_modifiers": false
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{Drop:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

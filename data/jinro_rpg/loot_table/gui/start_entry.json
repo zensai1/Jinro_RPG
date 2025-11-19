@@ -1,0 +1,56 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:beacon",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "エントリー開始",
+                "type": "text",
+                "color": "yellow",
+                "italic": false
+              },
+              "target": "custom_name"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "左クリックで使用 / Shift + 左クリックで使用",
+                  "type": "text",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "左クリックでエントリー受付を開始します。",
+                  "type": "text",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "Shift + 左クリックで前の情報を引き継いで",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "エントリーを開始します。",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "functions": []
+}

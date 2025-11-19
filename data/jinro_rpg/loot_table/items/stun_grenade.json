@@ -1,0 +1,69 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:snowball",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "スタングレネード ",
+                "type": "text",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "右クリックで投擲",
+                  "type": "text",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "当てた対象を",
+                  "type": "text",
+                  "color": "gray",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": "5秒間",
+                      "type": "text",
+                      "color": "white",
+                      "italic": false,
+                      "extra": [
+                        {
+                          "text": "盲目にし",
+                          "type": "text",
+                          "color": "gray",
+                          "italic": false
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "text": "行動不能にする",
+                  "type": "text",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{Drop:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

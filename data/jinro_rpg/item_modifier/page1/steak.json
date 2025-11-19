@@ -1,0 +1,34 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "現在の値段：",
+        "extra": [
+          {
+            "score": {
+              "objective": "Znsi.Price",
+              "name": "#steak"
+            },
+            "extra": [
+              {
+                "text": "G",
+                "color": "gold",
+                "bold": true,
+                "italic": false
+              }
+            ],
+            "color": "gold",
+            "bold": true,
+            "italic": false
+          }
+        ],
+        "color": "gold",
+        "italic": false
+      }
+    ],
+    "mode": "append",
+    "conditions": []
+  }
+]

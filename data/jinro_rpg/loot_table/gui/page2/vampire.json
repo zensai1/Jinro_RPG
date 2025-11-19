@@ -1,0 +1,61 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:fermented_spider_eye",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "吸血鬼",
+                "color": "light_purple",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "モード：",
+                  "extra": [
+                    {
+                      "text": "確率出現 ",
+                      "italic": false
+                    },
+                    {
+                      "score": {
+                        "objective": "Znsi.Percent",
+                        "name": "#vampire"
+                      },
+                      "extra": [
+                        {
+                          "text": "%",
+                          "italic": false
+                        }
+                      ],
+                      "italic": false
+                    }
+                  ],
+                  "color": "gray",
+                  "italic": false
+                },
+                " ",
+                {
+                  "text": "左クリックで切替",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:breeze_rod",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "プレイヤーヘッド",
+                "color": "yellow",
+                "italic": false
+              },
+              "target": "custom_name"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "右クリックで使用",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "自分の位置にプレイヤーヘッドを",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "召喚するように設定する",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:player_head",
+                "minecraft:consumable": {
+                  "consume_seconds": 0,
+                  "animation": "block",
+                  "sound": "minecraft:intentionally_empty",
+                  "has_consume_particles": false
+                },
+                "minecraft:use_remainder": {
+                  "id": "minecraft:player_head",
+                  "components": {
+                    "minecraft:custom_name": {
+                      "text": "プレイヤーヘッド",
+                      "color": "yellow",
+                      "italic": false
+                    },
+                    "minecraft:lore": [
+                      {
+                        "text": "右クリックで使用",
+                        "color": "green",
+                        "italic": false
+                      },
+                      {
+                        "text": "自分の位置にプレイヤーヘッドを",
+                        "color": "gray",
+                        "italic": false
+                      },
+                      {
+                        "text": "召喚するように設定する",
+                        "italic": false
+                      }
+                    ],
+                    "minecraft:item_model": "minecraft:player_head",
+                    "minecraft:consumable": {
+                      "consume_seconds": 0,
+                      "animation": "block",
+                      "sound": "minecraft:intentionally_empty",
+                      "has_consume_particles": false
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

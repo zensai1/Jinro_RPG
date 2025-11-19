@@ -1,0 +1,34 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_model": "minecraft:structure_void"
+    },
+    "conditions": []
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "モード：",
+        "extra": [
+          {
+            "text": "無効",
+            "color": "red",
+            "italic": false
+          }
+        ],
+        "color": "gray",
+        "italic": false
+      },
+      "",
+      {
+        "text": "左クリックで切替",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "mode": "replace_all"
+  }
+]

@@ -1,0 +1,63 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "聖なる十字架",
+                "color": "white",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "殴って使用",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "吸血鬼",
+                  "color": "light_purple",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": "を一撃で倒せる",
+                      "color": "gray",
+                      "italic": false
+                    }
+                  ]
+                },
+                {
+                  "text": "※一回で壊れる",
+                  "color": "red",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{Drop:1b}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

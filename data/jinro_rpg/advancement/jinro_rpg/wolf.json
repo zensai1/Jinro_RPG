@@ -1,0 +1,51 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:redstone",
+      "count": 1
+    },
+    "title": {
+      "text": "人狼　　　　　　　　　　　　　",
+      "color": "dark_red",
+      "bold": true,
+      "italic": false
+    },
+    "description": [
+      {
+        "text": "勝利条件：村人の全滅\n",
+        "color": "gold",
+        "italic": false
+      },
+      {
+        "text": "占い結果：",
+        "extra": [
+          {
+            "text": "人狼\n",
+            "color": "dark_red",
+            "italic": false
+          }
+        ],
+        "color": "green"
+      },
+      {
+        "text": "人狼同士はお互いを認識でき\n",
+        "color": "gray",
+        "italic": false
+      },
+      {
+        "text": "ネームタグも見える",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "background": "minecraft:block/iron_block",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "parent": "jinro_rpg:jinro_rpg/wolf_camp",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

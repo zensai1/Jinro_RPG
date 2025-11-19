@@ -1,0 +1,109 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:phantom_membrane",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "プロビデンス・アイ",
+                "color": "white",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "右クリックで使用　",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "生存者",
+                  "extra": [
+                    {
+                      "text": "１人",
+                      "extra": [
+                        {
+                          "text": "を選び",
+                          "extra": [
+                            {
+                              "text": "15秒間",
+                              "color": "white",
+                              "italic": false
+                            }
+                          ],
+                          "color": "gray",
+                          "italic": false
+                        }
+                      ],
+                      "color": "white",
+                      "italic": false
+                    }
+                  ],
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "壁越しでも視認可能",
+                  "extra": [
+                    {
+                      "text": "な状態にする",
+                      "color": "gray",
+                      "italic": false
+                    }
+                  ],
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:consumable": {
+                  "consume_seconds": 0,
+                  "animation": "block",
+                  "sound": "minecraft:intentionally_empty",
+                  "has_consume_particles": false
+                },
+                "minecraft:item_model": "minecraft:ender_eye",
+                "minecraft:use_remainder": {
+                  "id": "minecraft:phantom_membrane",
+                  "components": {
+                    "minecraft:item_name": {
+                      "text": "プロビデンス・アイ",
+                      "color": "white",
+                      "italic": false
+                    },
+                    "minecraft:item_model": "minecraft:ender_eye",
+                    "minecraft:enchantment_glint_override": true
+                  }
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{Drop:1b}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:skeleton_skull",
+      "count": 1
+    },
+    "title": {
+      "text": "スケルトンについて　　　　　　　　",
+      "color": "white",
+      "bold": true
+    },
+    "description": [
+      {
+        "text": "7日目、10日目、15日目の夜から\n",
+        "color": "gray",
+        "italic": false
+      },
+      {
+        "text": "スケルトンが強化され攻撃力が上昇します",
+        "type": "text",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "background": "minecraft:block/iron_block",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "parent": "jinro_rpg:diff_original/diff_1",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

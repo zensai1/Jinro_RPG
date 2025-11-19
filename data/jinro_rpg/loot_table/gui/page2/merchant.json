@@ -1,0 +1,69 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bundle",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "商人",
+                "color": "green",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "モード：",
+                  "extra": [
+                    {
+                      "text": "確率出現 ",
+                      "italic": false
+                    },
+                    {
+                      "score": {
+                        "objective": "Znsi.Percent",
+                        "name": "#merchant"
+                      },
+                      "extra": [
+                        {
+                          "text": "%",
+                          "italic": false
+                        }
+                      ],
+                      "italic": false
+                    }
+                  ],
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "左クリックで切替",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:bundle_contents": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "署名し本のタイトルを入力することで",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "ゲーム中の名前を変更できます。",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{NickName:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "functions": []
+}

@@ -1,0 +1,51 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_candle",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "人狼",
+                "color": "dark_red",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "現在の人数：",
+                  "extra": [
+                    {
+                      "score": {
+                        "objective": "Znsi.Num",
+                        "name": "#wolf"
+                      },
+                      "extra": [
+                        {
+                          "text": "人",
+                          "italic": false
+                        }
+                      ],
+                      "italic": false
+                    }
+                  ],
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

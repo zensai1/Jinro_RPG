@@ -1,0 +1,52 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:soul_lantern",
+      "count": 1
+    },
+    "title": {
+      "text": "双子　　　　　　　　　　　　　",
+      "color": "aqua",
+      "bold": true,
+      "italic": false
+    },
+    "description": [
+      {
+        "text": "勝利条件：人狼の全滅\n",
+        "color": "gold",
+        "italic": false
+      },
+      {
+        "text": "占い結果：",
+        "extra": [
+          {
+            "text": "村人\n",
+            "color": "blue",
+            "italic": false
+          }
+        ],
+        "color": "green",
+        "italic": false
+      },
+      {
+        "text": "お互いを認識できる\n",
+        "color": "gray",
+        "italic": false
+      },
+      {
+        "text": "片方が死ぬともう一人も死亡する",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "background": "minecraft:block/iron_block",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "parent": "jinro_rpg:jinro_rpg/wolf_possession",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

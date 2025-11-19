@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:magenta_candle",
+      "count": 1
+    },
+    "title": {
+      "text": "第三陣営",
+      "color": "light_purple",
+      "bold": true,
+      "italic": false
+    },
+    "description": {
+      "text": "勝利条件：役職によって異なる",
+      "color": "gold",
+      "italic": false
+    },
+    "background": "minecraft:block/iron_block",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "parent": "jinro_rpg:jinro_rpg/position",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

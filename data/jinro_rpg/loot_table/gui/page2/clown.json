@@ -1,0 +1,62 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carved_pumpkin",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "道化師",
+                "color": "#ff8c00",
+                "italic": false
+              },
+              "target": "custom_name"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "モード：",
+                  "extra": [
+                    {
+                      "text": "確率出現 ",
+                      "italic": false
+                    },
+                    {
+                      "score": {
+                        "objective": "Znsi.Percent",
+                        "name": "#clown"
+                      },
+                      "extra": [
+                        {
+                          "text": "%",
+                          "italic": false
+                        }
+                      ],
+                      "italic": false
+                    }
+                  ],
+                  "color": "gray",
+                  "italic": false
+                },
+                " ",
+                {
+                  "text": "左クリックで切替",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

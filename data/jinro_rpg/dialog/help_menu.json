@@ -1,0 +1,80 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "お助けメニュー"
+  },
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": {
+      "text": ""
+    }
+  },
+  "exit_action": {
+    "label": {
+      "text": "閉じる"
+    }
+  },
+  "columns": 1,
+  "actions": [
+    {
+      "label": {
+        "text": "役職配分"
+      },
+      "tooltip": {
+        "text": "役職配分を確認"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger Znsi.Quickchat.Trigger set 1"
+      }
+    },
+    {
+      "label": {
+        "text": "占い結果"
+      },
+      "tooltip": {
+        "text": "占いの結果を送信"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger Znsi.Quickchat.Trigger set 2"
+      }
+    },
+    {
+      "label": {
+        "text": "生存者VCに移動"
+      },
+      "tooltip": {
+        "text": "生存者VCに移動する",
+        "extra": [
+          {
+            "text": "(八百屋鯖限定)",
+            "color": "red"
+          }
+        ]
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger Znsi.MoveCH set 1"
+      }
+    },
+    {
+      "label": {
+        "text": "墓場VCに移動"
+      },
+      "tooltip": {
+        "text": "墓場VCに移動する",
+        "extra": [
+          {
+            "text": "(八百屋鯖限定)",
+            "color": "red"
+          }
+        ]
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger Znsi.MoveCH set 2"
+      }
+    }
+  ]
+}

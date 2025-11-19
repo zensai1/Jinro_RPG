@@ -1,0 +1,58 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:map",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "MAP1",
+                "color": "gold",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "MAP：",
+                  "extra": [
+                    {
+                      "storage": "jinro_rpg:",
+                      "nbt": "Setting.Map1.Name",
+                      "interpret": true
+                    }
+                  ],
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "スタート地点：",
+                  "extra": [
+                    {
+                      "nbt": "Setting.Map1.Pos",
+                      "storage": "jinro_rpg:",
+                      "italic": false
+                    }
+                  ],
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:diamond_hoe",
+      "count": 1
+    },
+    "title": {
+      "text": "死神　　　　　　　　　　",
+      "color": "dark_aqua",
+      "bold": true,
+      "italic": false
+    },
+    "description": [
+      {
+        "text": "勝利条件：奪った役職に応じる\n",
+        "color": "gold",
+        "italic": false
+      },
+      {
+        "text": "占い結果：",
+        "extra": [
+          {
+            "text": "死神\n",
+            "color": "dark_aqua",
+            "italic": false
+          }
+        ],
+        "color": "green"
+      },
+      {
+        "text": "死神がいるとき死んだプレイヤーは魂をドロップする\n",
+        "color": "gray",
+        "italic": false
+      },
+      {
+        "text": "魂は死神しか拾えず拾ったときその魂の持ち主の\n",
+        "color": "gray",
+        "italic": false
+      },
+      {
+        "text": "役職を得る",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "background": "minecraft:block/iron_block",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "parent": "jinro_rpg:jinro_rpg/vampire",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

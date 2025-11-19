@@ -1,0 +1,83 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bone",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "スケルトン沸きポイント",
+                "color": "dark_gray",
+                "italic": false
+              },
+              "target": "custom_name"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "右クリックで使用",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "自分の位置をスケルトンの沸き場所に設定する",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:skeleton_spawn_egg",
+                "minecraft:consumable": {
+                  "consume_seconds": 0,
+                  "animation": "block",
+                  "sound": "minecraft:intentionally_empty",
+                  "has_consume_particles": false
+                },
+                "minecraft:use_remainder": {
+                  "id": "minecraft:bone",
+                  "components": {
+                    "minecraft:custom_name": {
+                      "text": "スケルトン沸きポイント",
+                      "color": "dark_gray",
+                      "italic": false
+                    },
+                    "minecraft:lore": [
+                      {
+                        "text": "右クリックで使用",
+                        "color": "green",
+                        "italic": false
+                      },
+                      {
+                        "text": "自分の位置をスケルトンの沸き場所に設定する",
+                        "color": "gray",
+                        "italic": false
+                      }
+                    ],
+                    "minecraft:item_model": "minecraft:skeleton_spawn_egg",
+                    "minecraft:consumable": {
+                      "consume_seconds": 0,
+                      "animation": "block",
+                      "sound": "minecraft:intentionally_empty",
+                      "has_consume_particles": false
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

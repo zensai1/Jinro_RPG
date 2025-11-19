@@ -1,0 +1,52 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:villager_spawn_egg",
+      "count": 1
+    },
+    "title": {
+      "text": "屈強な村人　　　　　　　　　　",
+      "color": "gold",
+      "bold": true,
+      "italic": false
+    },
+    "description": [
+      {
+        "text": "勝利条件：人狼の全滅\n",
+        "color": "gold",
+        "italic": false
+      },
+      {
+        "text": "占い結果：",
+        "extra": [
+          {
+            "text": "村人\n",
+            "color": "blue",
+            "italic": false
+          }
+        ],
+        "color": "green",
+        "italic": false
+      },
+      {
+        "text": "致命傷でも30秒間生きながらえる\n",
+        "color": "gray",
+        "italic": false
+      },
+      {
+        "text": "(持ち物はすべて失う)",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "background": "minecraft:block/iron_block",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "parent": "jinro_rpg:jinro_rpg/twins",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

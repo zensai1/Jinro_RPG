@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:player_head",
+      "components": {
+        "minecraft:profile": {
+          "name": "zensai6464"
+        }
+      },
+      "count": 1
+    },
+    "title": {
+      "text": "本家との違い",
+      "color": "white",
+      "bold": true,
+      "italic": false
+    },
+    "description": "",
+    "background": "minecraft:block/iron_block",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

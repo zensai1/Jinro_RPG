@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:red_candle",
+      "count": 1
+    },
+    "title": {
+      "text": "人狼陣営",
+      "color": "dark_red",
+      "bold": true,
+      "italic": false
+    },
+    "description": {
+      "text": "勝利条件：村人の全滅",
+      "color": "gold",
+      "italic": false
+    },
+    "background": "minecraft:block/iron_block",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "parent": "jinro_rpg:jinro_rpg/position",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

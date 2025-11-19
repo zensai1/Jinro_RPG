@@ -1,0 +1,57 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:end_crystal",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "共犯者の目",
+                "color": "white",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "Qで使用",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "人狼",
+                  "color": "dark_red",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": "誰か一人の名前がわかる",
+                      "color": "gray",
+                      "italic": false
+                    }
+                  ]
+                },
+                {
+                  "text": "※共犯者以外使用できない",
+                  "color": "red",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{Drop:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

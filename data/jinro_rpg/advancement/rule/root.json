@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:book",
+      "count": 1
+    },
+    "title": {
+      "text": "ルール説明　　",
+      "color": "white",
+      "bold": true
+    },
+    "description": "",
+    "background": "minecraft:block/iron_block",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

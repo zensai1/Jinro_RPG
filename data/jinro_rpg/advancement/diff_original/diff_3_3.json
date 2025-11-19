@@ -1,0 +1,41 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:knowledge_book",
+      "count": 1
+    },
+    "title": {
+      "text": "お助けメニュー②：占い結果　　",
+      "color": "white",
+      "bold": true
+    },
+    "description": [
+      {
+        "text": "しゃべれない人向けに手軽に\n",
+        "color": "gray",
+        "italic": false
+      },
+      {
+        "text": "占い結果をチャットに送れます",
+        "extra": [
+          {
+            "text": "(昼時間専用)",
+            "color": "red",
+            "italic": false
+          }
+        ],
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "background": "minecraft:block/iron_block",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "parent": "jinro_rpg:diff_original/diff_3_2",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

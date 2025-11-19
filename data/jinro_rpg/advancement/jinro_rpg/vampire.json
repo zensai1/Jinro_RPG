@@ -1,0 +1,51 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:fermented_spider_eye",
+      "count": 1
+    },
+    "title": {
+      "text": "吸血鬼　　　　　　　　　　　　　　",
+      "color": "light_purple",
+      "bold": true,
+      "italic": false
+    },
+    "description": [
+      {
+        "text": "勝利条件：村人か人狼のどちらかが全滅した時に生存していたら単独勝利\n",
+        "color": "gold",
+        "italic": false
+      },
+      {
+        "text": "占い結果：",
+        "extra": [
+          {
+            "text": "吸血鬼\n",
+            "color": "light_purple",
+            "italic": false
+          }
+        ],
+        "color": "green"
+      },
+      {
+        "text": "夜時間の間は致命傷を受けても死なない\n",
+        "color": "gray",
+        "italic": false
+      },
+      {
+        "text": "聖なる十字架で殴られると即死する",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "background": "minecraft:block/iron_block",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "parent": "jinro_rpg:jinro_rpg/third_camp",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}
