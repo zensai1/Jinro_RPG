@@ -5,6 +5,9 @@
     #tellraw @a[tag=op] "分岐"
 
 
+##霊媒師の蝋燭
+    $execute if data storage jinro_rpg: {Game:{Branch:{Code:"Medium_candle"}}} run function jinro_rpg:game/items/medium_candle/position with storage jinro_rpg: Info.$(ID)
+
 ##共犯者の目
     #execute if data storage jinro_rpg: {Game:{Branch:{Code:"共犯者の目"}}} run tellraw @a[tag=op] "共犯者の目"
     $execute if data storage jinro_rpg: {Game:{Branch:{Code:"共犯者の目"}}} run function jinro_rpg:game/items/accomplice_eye2 with storage jinro_rpg: Info.$(ID)

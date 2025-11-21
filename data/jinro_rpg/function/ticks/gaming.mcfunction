@@ -1,6 +1,10 @@
 #>jinro_rpg:ticks/gaming
 
 
+##常時実行
+    execute as @a at @s if items entity @s container.* glass_bottle run clear @s glass_bottle
+
+
 ##ボスバー
     execute store result bossbar znsi.time value run scoreboard players get *** Znsi.Timer
     scoreboard players remove *** Znsi.Timer 1
@@ -41,7 +45,7 @@
     execute if entity @a[scores={Znsi.Medium.Trigger=1..}] as @a[scores={Znsi.Medium.Trigger=1..}] at @s store result storage jinro_rpg: Game.Medium.Num int 1 run scoreboard players get @s Znsi.Medium.Trigger
     execute if entity @a[scores={Znsi.Medium.Trigger=1..}] as @a[scores={Znsi.Medium.Trigger=1..}] at @s run function jinro_rpg:game/items/medium_candle/get_info with storage jinro_rpg: Game.Medium
     execute if entity @a[tag=Medium_Position] as @a[tag=Medium_Position] at @s run scoreboard players add @s Znsi.Response 1
-    execute if entity @a[scores={Znsi.Response=60..}] as @a[scores={Znsi.Response=60..}] at @s run function #oh_my_dat:please
+    execute if entity @a[scores={Znsi.Response=60..}] as @a[scores={Znsi.Response=60..}] at @s run function jinro_rpg:game/items/medium_candle/get_info2
     execute if entity @a[scores={Znsi.Response=60..}] as @a[scores={Znsi.Response=60..}] at @s run function jinro_rpg:game/items/medium_candle/position with storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Medium
 
 

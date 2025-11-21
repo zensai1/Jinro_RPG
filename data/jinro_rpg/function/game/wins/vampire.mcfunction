@@ -58,4 +58,5 @@
     execute if entity @a[tag=Reaper] as @a[tag=Reaper] at @s run function jinro_rpg:game/wins/get_info
 
 
+    scoreboard objectives setdisplay sidebar Znsi.Killcount
     function jinro_rpg:game/reset

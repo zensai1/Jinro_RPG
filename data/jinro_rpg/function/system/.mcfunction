@@ -38,6 +38,7 @@
     scoreboard objectives add Znsi.Death deathCount "死亡時"
     scoreboard objectives add Znsi.GameNum dummy "全数"
     scoreboard objectives add Znsi.Use.Snowball used:snowball "スタグレ2"
+    scoreboard objectives add Znsi.Killcount dummy "Kill数"
 
     scoreboard objectives add Auto.Mute trigger
     scoreboard objectives add Znsi.MoveCH trigger

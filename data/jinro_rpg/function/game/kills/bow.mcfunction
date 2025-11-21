@@ -22,6 +22,7 @@
     execute if entity @s[tag=!No_Death] run kill @s
     execute if entity @s[tag=!No_Death] run gamemode spectator @s
     execute if entity @s[tag=!No_Death] on attacker run tag @s add Perpetrator
+    execute if entity @s[tag=!No_Death] run scoreboard players add @a[tag=Perpetrator] Znsi.Killcount 1
     execute if entity @s[tag=No_Death,tag=!Protection,tag=Cursed_one,tag=!Cursed] on attacker run tag @s add Perpetrator
     execute if entity @s[tag=!No_Death] as @a[tag=Perpetrator] at @s run scoreboard players operation TMP Znsi.ID = @s Znsi.ID
     execute if entity @s[tag=!No_Death] as @e[type=item_display] if score @s Znsi.ID = TMP Znsi.ID run tag @s add select

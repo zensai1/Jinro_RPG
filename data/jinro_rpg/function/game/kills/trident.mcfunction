@@ -29,6 +29,7 @@
     
     ##加害者
         execute if entity @s[tag=!No_Death] on attacker run tag @s add Perpetrator
+        execute if entity @s[tag=!No_Death] if score @s Znsi.Grudge matches 2.. run scoreboard players add @a[tag=Perpetrator] Znsi.Killcount 1
         execute if entity @s[tag=!No_Death] as @a[tag=Perpetrator] at @s run scoreboard players operation TMP Znsi.ID = @s Znsi.ID
         execute if entity @s[tag=!No_Death] as @e[type=item_display] if score @s Znsi.ID = TMP Znsi.ID run tag @s add select
         execute if entity @e[type=item_display,tag=select,limit=1] as @e[type=item_display,tag=select] at @s run data modify storage jinro_rpg: Game.PerpetratorID set from entity @s item.components."minecraft:profile".name
