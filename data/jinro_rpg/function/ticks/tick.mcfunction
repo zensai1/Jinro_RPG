@@ -13,6 +13,7 @@
 
 ##試合中のみ常時実行
     execute if data storage jinro_rpg: {State:"試合中"} run function jinro_rpg:ticks/gaming
+    execute if data storage jinro_rpg: {State:"試合中"} run function jinro_rpg:ticks/map_gimmick
 
 ##リログ
     execute as @a at @s if score @s Znsi.Leave matches 1.. run function jinro_rpg:system/leave_game
@@ -20,3 +21,8 @@
 ##村人
     execute as @e[type=villager,tag=Auxiliary] at @s run data modify entity @s LastGossipDecay set value 1000000000
     execute as @e[type=villager,tag=Battle] at @s run data modify entity @s LastGossipDecay set value 1000000000
+
+
+
+##MAPギミック
+    execute as @e[type=interaction,tag=Ropeway] at @s run particle dust{color:[0.816,0.663,0.000],scale:1} ~ ~0.5 ~ 0 0 0 0.5 10 force @a

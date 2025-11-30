@@ -43,3 +43,7 @@
     execute as @a[tag=Accepted,gamemode=adventure] at @s run bossbar set znsi.response players @s
     execute as @a[tag=Accepted,gamemode=adventure] at @s run bossbar set znsi.response visible true
     execute as @a[tag=Accepted,gamemode=adventure] at @s run scoreboard players set *** Auto.Response 40
+
+
+##斧制限解除
+    execute if data storage jinro_rpg: {Setting:{Axe_kill:"ON"}} as @a[tag=WolfSide,gamemode=adventure] at @s run function jinro_rpg:game/items/axe_lim

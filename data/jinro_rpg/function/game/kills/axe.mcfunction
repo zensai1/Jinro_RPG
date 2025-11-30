@@ -36,6 +36,11 @@
     execute if entity @e[type=item_display,tag=select,limit=1] as @e[type=item_display,tag=select] at @s run data modify storage jinro_rpg: Game.PerpetratorID set from entity @s item.components."minecraft:profile".name
     execute if entity @e[type=item_display,tag=select,limit=1] run tag @e[type=item_display,tag=select] remove select
 
+
+    ##昼間だったら
+        execute if data storage jinro_rpg: {Game:{State:"昼時間"}} if data storage jinro_rpg: {Setting:{Axe_kill:"ON"}} as @a[tag=Perpetrator] at @s run function jinro_rpg:game/items/axe_lim
+
+
     execute if entity @s[tag=!No_Death] store result storage jinro_rpg: Game.Victim int 1.0 run scoreboard players get @s Znsi.ID
     execute if entity @s[tag=!No_Death] run scoreboard players operation TMP Znsi.ID = @s Znsi.ID
     execute if entity @s[tag=!No_Death] as @e[type=item_display] if score @s Znsi.ID = TMP Znsi.ID run tag @s add select
@@ -70,8 +75,6 @@
     execute if entity @s[tag=!No_Death,tag=Clown] on attacker run tag @s add Slayer
     execute if entity @s[tag=!No_Death,tag=Clown] run data modify storage jinro_rpg: Game.Clown.Reward set from entity @s Inventory
 
-
-##死神
 
 ##共通処理
     execute if entity @s[tag=!No_Death] run function jinro_rpg:game/kills/axe2 with storage jinro_rpg: Game

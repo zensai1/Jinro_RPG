@@ -2,7 +2,7 @@
 
 
 ##Debugメッセージ
-    tellraw @a[tag=op] "死神"
+    #tellraw @a[tag=op] "死神"
 
 
 ##1d100

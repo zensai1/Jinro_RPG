@@ -3,6 +3,7 @@
 
 ##常時実行
     execute as @a at @s if items entity @s container.* glass_bottle run clear @s glass_bottle
+    execute as @e[type=trident] at @s run data modify entity @s damage set value 0.1
 
 
 ##ボスバー

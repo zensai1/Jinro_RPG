@@ -17,6 +17,6 @@
 
 
 ##もう一人にも双子の役職を付ける
-    execute if score *** Znsi.Percent <= #twins Znsi.Percent run tag @r[tag=!Distributed] add Twins
-    execute if score *** Znsi.Percent <= #twins Znsi.Percent run tag @r[tag=!Distributed,tag=Twins] add Distributed
+    execute if score *** Znsi.Percent <= #twins Znsi.Percent run tag @r[tag=!Distributed,tag=Accepted] add Twins
+    execute if score *** Znsi.Percent <= #twins Znsi.Percent run tag @r[tag=!Distributed,tag=Twins,tag=Accepted] add Distributed
 

@@ -5,14 +5,14 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:trident",
+          "name": "minecraft:wooden_axe",
           "functions": [
             {
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
-                "text": "怨念の槍 ",
-                "color": "white",
+                "text": "人狼の斧 ",
+                "color": "dark_red",
                 "italic": false
               }
             },
@@ -21,23 +21,28 @@
               "entity": "this",
               "lore": [
                 {
-                  "text": "殴って使用 / 右クリック長押し→放して発射",
+                  "text": "殴って使用",
                   "type": "text",
                   "color": "green",
                   "italic": false
                 },
                 {
-                  "text": "プレイヤーを2発で倒せる",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "外した場合は返ってくる",
+                  "text": "プレイヤーを一撃で倒せる",
                   "color": "gray",
                   "italic": false
                 },
                 {
                   "text": "※一回で壊れる",
+                  "color": "red",
+                  "italic": false
+                },
+                {
+                  "text": "※現在は使えない",
+                  "color": "red",
+                  "italic": false
+                },
+                {
+                  "text": "※人狼以外購入できない",
                   "color": "red",
                   "italic": false
                 }
@@ -47,14 +52,17 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:enchantment_glint_override": true,
-                "minecraft:damage": 248,
+                "minecraft:damage": 59,
                 "minecraft:attribute_modifiers": [
                   {
                     "type": "minecraft:attack_damage",
                     "id": "minecraft:",
-                    "amount": -0.9,
-                    "operation": "add_multiplied_base"
+                    "amount": 0,
+                    "operation": "add_multiplied_base",
+                    "slot": "mainhand",
+                    "display": {
+                      "type": "hidden"
+                    }
                   }
                 ]
               }
@@ -62,15 +70,7 @@
             {
               "function": "minecraft:toggle_tooltips",
               "toggles": {
-                "minecraft:attribute_modifiers": false,
-                "minecraft:enchantments": false
-              }
-            },
-            {
-              "function": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:loyalty": 1,
-                "minecraft:unbreaking": 255
+                "minecraft:attribute_modifiers": false
               }
             },
             {

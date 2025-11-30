@@ -16,3 +16,8 @@ execute if data storage jinro_rpg: {Setting:{Debug:"Off"}} run schedule function
 
 ##DebugMode
 execute if data storage jinro_rpg: {Setting:{Debug:"ON"}} run function jinro_rpg:game/start
+
+
+##Kill数を消す
+    scoreboard objectives setdisplay sidebar
+    scoreboard players reset * Znsi.Killcount

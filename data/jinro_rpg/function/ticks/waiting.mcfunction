@@ -84,8 +84,5 @@
     execute as @e[tag=Sign_stand] at @s run particle dust{color:[1.000,0.800,0.000],scale:1} ~ ~ ~ 0 0 0 0.5 5 force @a[tag=op]
 
 
-
-
-
 ##その他
     execute store result storage jinro_rpg: Setting.MapNum int 1 run scoreboard players get *** Znsi.SelectMap
