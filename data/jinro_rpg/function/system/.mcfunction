@@ -18,6 +18,7 @@
     scoreboard objectives add Znsi.Timer dummy "タイマー"
     scoreboard objectives add Znsi.Days dummy "日表示"
     scoreboard objectives add Znsi.Kill.Skeleton killed:skeleton "スケ倒したか"
+    scoreboard objectives add Znsi.Kill.WitherSkeleton killed:wither_skeleton "ウィザスケ倒したか"
     scoreboard objectives add Znsi.Fortune dummy "占い回数"
     scoreboard objectives add Znsi.Drop.Paper dropped:paper "呪符"
     scoreboard objectives add Znsi.Protection dummy "保護先"
@@ -38,6 +39,7 @@
     scoreboard objectives add Znsi.Death deathCount "死亡時"
     scoreboard objectives add Znsi.GameNum dummy "全数"
     scoreboard objectives add Znsi.Use.Snowball used:snowball "スタグレ2"
+    scoreboard objectives add Znsi.DiceRoll dummy "イベントダイスロール"
     scoreboard objectives add Znsi.Killcount dummy {"bold":true,"color":"dark_red","text":"今回のKill数"}
 
     scoreboard objectives add Auto.Mute trigger

@@ -1,0 +1,58 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "jinro_rpg:items/bow"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "jinro_rpg:items/arrow"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "jinro_rpg:items/steak"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "jinro_rpg:items/stun_grenade"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "jinro_rpg:items/invisibility_potion"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "jinro_rpg:items/grudge_spear"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "jinro_rpg:items/fortune_mind"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "jinro_rpg:items/medium_candle"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "jinro_rpg:items/knights_protection"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "jinro_rpg:items/providence_eye"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "jinro_rpg:items/holy_cross"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "jinro_rpg:items/curse_of_revelation"
+        }
+      ]
+    }
+  ],
+  "functions": []
+}

@@ -47,3 +47,7 @@
 
 ##斧制限解除
     execute if data storage jinro_rpg: {Setting:{Axe_kill:"ON"}} as @a[tag=WolfSide,gamemode=adventure] at @s run function jinro_rpg:game/items/axe_lim
+
+
+##イベントダイスロール!!
+    execute if data storage jinro_rpg: {Setting:{Event:"ON"}} unless data storage jinro_rpg: {Game:{Event:"イベント発生済"}} run function jinro_rpg:event/roll
