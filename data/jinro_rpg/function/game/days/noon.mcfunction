@@ -29,6 +29,7 @@
     execute as @a at @s run title @s title [{"color":"gold","italic":false,"text":"☀ "},{"bold":true,"color":"yellow","text":"昼"}," ☀"]
     $execute as @a at @s run title @s subtitle {"color":"gold","italic":false,"text":"- $(Days)日目 -"}
     kill @e[type=skeleton]
+    kill @e[type=wither_skeleton]
 
 ##自動ミュート
     execute as @a[tag=Accepted,gamemode=adventure] at @s run trigger Auto.Mute set 2

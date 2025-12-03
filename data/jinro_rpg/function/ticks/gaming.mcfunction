@@ -20,6 +20,7 @@
 
     execute as @a[scores={Znsi.Kill.WitherSkeleton=1..}] at @s run loot give @s loot jinro_rpg:items/items
     execute as @a[scores={Znsi.Kill.WitherSkeleton=1..}] at @s run scoreboard players reset @s Znsi.Kill.WitherSkeleton
+    effect clear @a wither
 
 ##actionvar
     execute as @a[tag=Accepted,tag=!No_Fortune,scores={Znsi.Fortune=1..}] at @s run title @s actionbar [{"color":"white","text":"占い可能回数："},{"bold":true,"color":"blue","score":{"name":"@s","objective":"Znsi.Fortune"}},{"bold":true,"color":"blue","text":"回"}]

@@ -32,6 +32,10 @@
     $execute if data storage jinro_rpg: {Game:{Branch:{Code:"死神"}}} run function jinro_rpg:game/reaper with storage jinro_rpg: Info.$(ID)
 
 
+##イベント「Happy Birthday!!」
+    $execute if data storage jinro_rpg: {Game:{Branch:{Code:"HappyBirthday"}}} run function jinro_rpg:event/02_happybirthday_02 with storage jinro_rpg: Info.$(ID)
+
+    
 ##ゲーム終了時
     #execute if data storage jinro_rpg: {Game:{Branch:{Code:"ゲーム終了"}}} run tellraw @a[tag=op] "終了"
     $execute if data storage jinro_rpg: {Game:{Branch:{Code:"ゲーム終了"}}} run function jinro_rpg:game/wins/show_position with storage jinro_rpg: Info.$(ID)

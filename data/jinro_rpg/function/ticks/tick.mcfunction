@@ -13,7 +13,7 @@
 
 ##試合中のみ常時実行
     execute if data storage jinro_rpg: {State:"試合中"} run function jinro_rpg:ticks/gaming
-    execute if data storage jinro_rpg: {State:"試合中"} run function jinro_rpg:ticks/map_gimmick
+    function jinro_rpg:ticks/map_gimmick
 
 ##リログ
     execute as @a at @s if score @s Znsi.Leave matches 1.. run function jinro_rpg:system/leave_game

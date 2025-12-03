@@ -1,7 +1,7 @@
 #>jinro_rpg:game/items/axe_lim
 
 
-say axe_lim
+#say axe_lim
 ##斧を石斧から木斧に
 execute if data storage jinro_rpg: {Game:{State:"昼時間"}} if items entity @s weapon.mainhand stone_axe run item replace entity @s weapon.mainhand with air
 execute if data storage jinro_rpg: {Game:{State:"昼時間"}} if items entity @s hotbar.0 stone_axe run loot replace entity @s hotbar.0 loot jinro_rpg:items/axe_2

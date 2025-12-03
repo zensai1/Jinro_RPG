@@ -1,0 +1,90 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:honeycomb",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "誕生日ケーキ",
+                "color": "white",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "GMが誕生日のお祝いとして作ったケーキ",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "食べると満腹度が最大まで回復し、しばらくおなかが減らなくなる",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "ついでに足も速くなる",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:food": {
+                  "nutrition": 20,
+                  "saturation": 0,
+                  "can_always_eat": true
+                },
+                "minecraft:item_model": "minecraft:cake",
+                "minecraft:consumable": {
+                  "consume_seconds": 5,
+                  "animation": "eat",
+                  "sound": "minecraft:entity.generic.eat",
+                  "has_consume_particles": true,
+                  "on_consume_effects": [
+                    {
+                      "type": "minecraft:apply_effects",
+                      "effects": [
+                        {
+                          "id": "minecraft:saturation",
+                          "amplifier": 20,
+                          "duration": 1200,
+                          "ambient": false,
+                          "show_particles": false,
+                          "show_icon": true
+                        },
+                        {
+                          "id": "minecraft:speed",
+                          "amplifier": 1,
+                          "duration": 1200,
+                          "ambient": false,
+                          "show_particles": false,
+                          "show_icon": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{Drop:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
