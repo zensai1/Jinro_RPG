@@ -1,22 +1,27 @@
 #>jinro_rpg:system/leave_game
 
 
-#メッセージ
-    tellraw @s [{"color":"red","text":"[人狼RPG] "},{"color":"white","text":"人狼RPGへようこそ　現在のVerは「1.2.1」です"}]
+##メッセージ
+    tellraw @s [{"color":"red","text":"[人狼RPG] "},{"color":"white","text":"人狼RPGへようこそ　現在のVerは「1.04」です"}]
     tellraw @s [{"color":"red","text":"[人狼RPG] "},{"color":"white","text":"原案：WhiteTails様"}]
     tellraw @s [{"color":"red","text":"[人狼RPG] "},{"color":"white","text":"本家の違いは"},{"color":"white","keybind":"key.advancements"},{"color":"white","text":"キーで確認できます"}]
     #tellraw @s [{"color":"red","text":"[人狼RPG] "},{"color":"white","text":"ゲーム内の音の大きさはジュークボックス/音符ブロックの部分で変更できます"}]
 
-#ゲーム中ならリセットしない
+
+##今の場所へTP
+    $tp @s $(x) $(y) $(z)
+
+
+##ゲーム中ならリセットしない
     scoreboard players reset @s Znsi.Leave
-    #execute if score *** Znsi.State matches 1 if data storage jinro_rpg: {Game:{State:"昼時間"}} run return 0
     execute if data storage jinro_rpg: {State:"試合中"} run return 0
 
-#観戦にする
+
+##観戦にする
     #gamemode spectator @s
 
-#タグを消す
-    tag @s remove Accepted
+
+##タグを消す
     tag @s remove Accomplice
     tag @s remove Bakery
     tag @s remove Cursed_one
@@ -39,7 +44,8 @@
     tag @s remove WolfSide
     tag @s remove Clown
 
-#スコアボード
+
+##スコアボード
     scoreboard players set @s Auto.Mute 2
     scoreboard players reset @s[tag=!op] Znsi.Page
     scoreboard players reset @s Znsi.Response
@@ -47,12 +53,20 @@
     scoreboard players reset @s Znsi.Grudge
     scoreboard players reset @s Znsi.Fortune
     scoreboard players reset @s Znsi.Dying.Timer
-    scoreboard players reset @s Znsi.Leave
     scoreboard players reset @s Znsi.Procidence
     scoreboard players reset @s Znsi.Protection
 
-#その他
+
+##その他
     team leave @s
     attribute @s jump_strength base reset
     attribute @s movement_speed base reset
     effect clear @s unluck
+
+
+##自分のID付きディスプレイがなかったら参加Tagを削除
+    scoreboard players operation #TEMP Znsi.ID = @s Znsi.ID
+    execute as @e[tag=Sign_stand] if score @s Znsi.ID = #TEMP Znsi.ID run tag @s add Exist
+    execute store result score *** Znsi.Temp if entity @e[tag=Exist]
+    execute if score *** Znsi.Temp matches 0 run tag @s remove Accepted
+    tag @e[tag=Exist] remove Exist

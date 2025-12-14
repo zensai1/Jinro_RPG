@@ -146,5 +146,5 @@
 
 ##VC切替関連
     scoreboard players enable @a Znsi.MoveCH
-    execute if entity @a[gamemode=adventure,tag=Accepted,scores={Znsi.MoveCH=2}] as @a[gamemode=adventure,tag=Accepted,scores={Znsi.MoveCH=2}] at @s run tellraw @s [{"color":"red","text":"[人狼RPG] "},{"color":"white","text":"生存中なので移動できません"}]
+    #execute if entity @a[gamemode=adventure,tag=Accepted,scores={Znsi.MoveCH=2}] as @a[gamemode=adventure,tag=Accepted,scores={Znsi.MoveCH=2}] at @s run tellraw @s [{"color":"red","text":"[人狼RPG] "},{"color":"white","text":"生存中なので移動できません"}]
     execute if entity @a[gamemode=adventure,tag=Accepted,scores={Znsi.MoveCH=2}] as @a[gamemode=adventure,tag=Accepted,scores={Znsi.MoveCH=2}] at @s run scoreboard players reset @s Znsi.MoveCH

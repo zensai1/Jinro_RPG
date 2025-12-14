@@ -10,3 +10,7 @@
 
 ##Tag消す
     tag @a[tag=Birthday] remove Birthday
+
+
+##内部
+    data remove storage jinro_rpg: Game.Branch.Code

@@ -1,7 +1,7 @@
 #>jinro_rpg:ticks/tick
 
 ##初めて入る人
-    execute if entity @a[tag=!firstlogin] as @a[tag=!firstlogin] at @s run function jinro_rpg:system/firstlogin
+    execute if entity @a[tag=!firstlogin] as @a[tag=!firstlogin] at @s run function jinro_rpg:system/firstlogin with storage jinro_rpg: Setting.SelectMap.Pos
 
 ##Display(プレイヤーヘッド)を回転させる
     execute as @e[type=minecraft:item_display,tag=Sign] at @s run scoreboard players add @s Znsi.Rotation 3
@@ -16,7 +16,7 @@
     function jinro_rpg:ticks/map_gimmick
 
 ##リログ
-    execute as @a at @s if score @s Znsi.Leave matches 1.. run function jinro_rpg:system/leave_game
+    execute as @a at @s if score @s Znsi.Leave matches 1.. run function jinro_rpg:system/leave_game with storage jinro_rpg: Setting.SelectMap.Pos
 
 ##村人
     execute as @e[type=villager,tag=Auxiliary] at @s run data modify entity @s LastGossipDecay set value 1000000000
