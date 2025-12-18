@@ -11,6 +11,8 @@
     loot replace entity @s inventory.3 loot jinro_rpg:gui/page4/map3
     loot replace entity @s inventory.4 loot jinro_rpg:gui/page4/map4
     loot replace entity @s inventory.5 loot jinro_rpg:gui/page4/map5
+    loot replace entity @s inventory.6 loot jinro_rpg:gui/page4/map6
+
 
 #その他
     loot replace entity @s inventory.26 loot jinro_rpg:gui/close

@@ -2,7 +2,7 @@
 
 
 ##初めてログインする人にいろいろ初期設定をするよ！
-    tellraw @s [{"color":"red","text":"[人狼RPG] "},{"color":"white","text":"人狼RPGへようこそ　現在のVerは「1.04」です"}]
+    tellraw @s [{"color":"red","text":"[人狼RPG] "},{"color":"white","text":"人狼RPGへようこそ"}]
     tellraw @s [{"color":"red","text":"[人狼RPG] "},{"color":"white","text":"原案：WhiteTails様"}]
     tellraw @s [{"color":"red","text":"[人狼RPG] "},{"color":"white","text":"本家の違いは"},{"color":"white","keybind":"key.advancements"},{"color":"white","text":"キーで確認できます"}]
     tag @s add firstlogin

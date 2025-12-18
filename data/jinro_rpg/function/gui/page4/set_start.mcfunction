@@ -25,4 +25,9 @@
     execute if entity @s[nbt=!{Inventory:[{id:"minecraft:map",Slot:14b}]}] store result storage jinro_rpg: Setting.Map5.Pos.y int 1 run data get entity @s Pos[1] 1
     execute if entity @s[nbt=!{Inventory:[{id:"minecraft:map",Slot:14b}]}] store result storage jinro_rpg: Setting.Map5.Pos.z int 1 run data get entity @s Pos[2] 1
 
+
+    execute if entity @s[nbt=!{Inventory:[{id:"minecraft:map",Slot:15b}]}] store result storage jinro_rpg: Setting.Map6.Pos.x int 1 run data get entity @s Pos[0] 1
+    execute if entity @s[nbt=!{Inventory:[{id:"minecraft:map",Slot:15b}]}] store result storage jinro_rpg: Setting.Map6.Pos.y int 1 run data get entity @s Pos[1] 1
+    execute if entity @s[nbt=!{Inventory:[{id:"minecraft:map",Slot:15b}]}] store result storage jinro_rpg: Setting.Map6.Pos.z int 1 run data get entity @s Pos[2] 1
+
     #say set_start

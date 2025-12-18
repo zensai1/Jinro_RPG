@@ -2,7 +2,7 @@
 
 
 ##メッセージ
-    tellraw @s [{"color":"red","text":"[人狼RPG] "},{"color":"white","text":"人狼RPGへようこそ　現在のVerは「1.04」です"}]
+    tellraw @s [{"color":"red","text":"[人狼RPG] "},{"color":"white","text":"人狼RPGへようこそ"}]
     tellraw @s [{"color":"red","text":"[人狼RPG] "},{"color":"white","text":"原案：WhiteTails様"}]
     tellraw @s [{"color":"red","text":"[人狼RPG] "},{"color":"white","text":"本家の違いは"},{"color":"white","keybind":"key.advancements"},{"color":"white","text":"キーで確認できます"}]
     #tellraw @s [{"color":"red","text":"[人狼RPG] "},{"color":"white","text":"ゲーム内の音の大きさはジュークボックス/音符ブロックの部分で変更できます"}]
