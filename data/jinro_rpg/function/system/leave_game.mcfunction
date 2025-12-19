@@ -70,3 +70,14 @@
     execute store result score *** Znsi.Temp if entity @e[tag=Exist]
     execute if score *** Znsi.Temp matches 0 run tag @s remove Accepted
     tag @e[tag=Exist] remove Exist
+
+
+##
+    function #oh_my_dat:please
+
+
+##Oh my datに情報を入れる
+    execute store result storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].MyInfo.ID int 1 run scoreboard players get @s Znsi.ID
+    loot spawn ~ ~10 ~ loot jinro_rpg:player_head
+    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].MyInfo.MCID set from entity @e[type=item,limit=1,nbt={Item:{id:"minecraft:player_head"}}] Item.components.minecraft:custom_name
+    kill @e[type=item,limit=1,nbt={Item:{id:"minecraft:player_head"}}]

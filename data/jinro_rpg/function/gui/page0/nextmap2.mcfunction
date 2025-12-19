@@ -14,6 +14,7 @@
     execute if score *** Znsi.SelectMap matches 3 run data modify storage jinro_rpg: Setting.SelectMap set from storage jinro_rpg: Setting.Map3
     execute if score *** Znsi.SelectMap matches 4 run data modify storage jinro_rpg: Setting.SelectMap set from storage jinro_rpg: Setting.Map4
     execute if score *** Znsi.SelectMap matches 5 run data modify storage jinro_rpg: Setting.SelectMap set from storage jinro_rpg: Setting.Map5
+    execute if score *** Znsi.SelectMap matches 6 run data modify storage jinro_rpg: Setting.SelectMap set from storage jinro_rpg: Setting.Map6
 
 
 #スケルトンの数
@@ -22,5 +23,7 @@
     execute store result score *** Znsi.SkeNum if score *** Znsi.SelectMap matches 3 if entity @e[tag=Boiling_Point,tag=Map3]
     execute store result score *** Znsi.SkeNum if score *** Znsi.SelectMap matches 4 if entity @e[tag=Boiling_Point,tag=Map4]
     execute store result score *** Znsi.SkeNum if score *** Znsi.SelectMap matches 5 if entity @e[tag=Boiling_Point,tag=Map5]
+    execute store result score *** Znsi.SkeNum if score *** Znsi.SelectMap matches 6 if entity @e[tag=Boiling_Point,tag=Map6]
+
 
     function jinro_rpg:gui/

@@ -2,6 +2,7 @@
 
 
 #CustomName.insertion
+function #oh_my_dat:please
 
 ##Debugメッセージ
     #tellraw @a[tag=op] "System/sign/entry"
@@ -24,6 +25,10 @@
     data modify entity @e[type=marker,limit=1,sort=nearest,tag=Sign_stand] CustomName set from entity @e[type=item,limit=1,sort=nearest] Item.components.minecraft:custom_name
     data remove entity @e[type=marker,limit=1,sort=nearest,tag=Sign_stand] CustomName.insertion
     kill @e[type=item,nbt={Item:{id:"minecraft:player_head"}},limit=1,sort=nearest]
+
+##/nicknameを使ってた場合
+    execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].MyInfo.NickName run data modify entity @e[type=text_display,limit=1,sort=nearest] text.text set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].MyInfo.NickName
+    execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].MyInfo.NickName run data remove entity @e[type=text_display,limit=1,sort=nearest] text.extra
 
 
 ##エントリー後の処理
