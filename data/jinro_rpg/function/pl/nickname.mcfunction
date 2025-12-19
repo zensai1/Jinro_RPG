@@ -13,4 +13,4 @@
     execute if entity @s[tag=Accepted] as @e[type=item_display] if score @s Znsi.ID = TMP Znsi.ID run tag @s add select
     execute if entity @s[tag=Accepted] as @e[type=text_display] if score @s Znsi.ID = TMP Znsi.ID run tag @s add select
     data modify entity @e[limit=1,tag=select,type=text_display] text set from storage jinro_rpg: Pl.Nickname
-
+    tag @e[tag=select] remove select
