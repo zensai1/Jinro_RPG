@@ -45,6 +45,7 @@
     scoreboard objectives add Auto.Mute trigger
     scoreboard objectives add Znsi.MoveCH trigger
     scoreboard objectives add Auto.Response dummy
+    scoreboard objectives add Znsi.Plugin dummy
 
 ##ゲームルールを設定
     gamerule doDaylightCycle false

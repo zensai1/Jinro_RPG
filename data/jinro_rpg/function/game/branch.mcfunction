@@ -14,7 +14,7 @@
 
 
 ##占い
-    execute if data storage jinro_rpg: {Game:{Branch:{Code:"占い"}}} run tellraw @a[tag=op] "占い分岐"
+    #execute if data storage jinro_rpg: {Game:{Branch:{Code:"占い"}}} run tellraw @a[tag=op] "占い分岐"
     $execute if data storage jinro_rpg: {Game:{Branch:{Code:"占い"}}} run function jinro_rpg:system/fortune/ with storage jinro_rpg: Info.$(ID)
 
 

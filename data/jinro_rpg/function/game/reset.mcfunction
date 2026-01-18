@@ -122,3 +122,7 @@
     kill @e[type=minecraft:item]
     worldborder set 10000000
     time set day
+
+
+##Plugin
+    scoreboard players set #Plugin Znsi.Plugin 2

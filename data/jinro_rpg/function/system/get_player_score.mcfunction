@@ -2,7 +2,7 @@
 
 
 ##Debugメッセージ
-    tellraw @a[tag=op] "get_player_score"
+    #tellraw @a[tag=op] "get_player_score"
 
 
 ##プレイヤー情報をストレージに格納する時

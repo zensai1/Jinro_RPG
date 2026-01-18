@@ -2,7 +2,7 @@
 
 
 ##Debugメッセージ
-    tellraw @a[tag=op] "input_info"
+    #tellraw @a[tag=op] "input_info"
 
 ##ストレージに入れる
     ##mcid

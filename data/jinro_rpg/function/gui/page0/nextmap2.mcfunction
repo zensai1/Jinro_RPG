@@ -6,7 +6,7 @@
 
 #
     scoreboard players remove *** Znsi.SelectMap 1
-    execute if score *** Znsi.SelectMap matches -1 run scoreboard players set *** Znsi.SelectMap 5
+    execute if score *** Znsi.SelectMap matches -1 run scoreboard players set *** Znsi.SelectMap 6
     execute if score *** Znsi.SelectMap matches 0 run data modify storage jinro_rpg: Setting.SelectMap set from storage jinro_rpg: Setting.Lobby
     execute if score *** Znsi.SelectMap matches 0 run data modify storage jinro_rpg: Setting.SelectMap.Name set value "ロビー"
     execute if score *** Znsi.SelectMap matches 1 run data modify storage jinro_rpg: Setting.SelectMap set from storage jinro_rpg: Setting.Map1

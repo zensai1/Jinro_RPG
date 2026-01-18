@@ -2,7 +2,7 @@
 
 
 #CustomName.insertion
-function #oh_my_dat:please
+    execute on target run function #oh_my_dat:please
 
 ##Debugメッセージ
     #tellraw @a[tag=op] "System/sign/entry"
@@ -28,12 +28,13 @@ function #oh_my_dat:please
 
 ##/nicknameを使ってた場合
     execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].MyInfo.NickName run data modify entity @e[type=text_display,limit=1,sort=nearest] text.text set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].MyInfo.NickName
+    execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].MyInfo.NickName run data modify entity @e[type=marker,limit=1,sort=nearest] CustomName.text set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].MyInfo.NickName
     execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].MyInfo.NickName run data remove entity @e[type=text_display,limit=1,sort=nearest] text.extra
 
 
 ##エントリー後の処理
     tellraw @p[tag=Entry] [{"color":"red","text":"[人狼RPG] "},{"color":"white","text":"エントリーしました。"}]
-    loot give @p[tag=Entry] loot jinro_rpg:nickname
+    #loot give @p[tag=Entry] loot jinro_rpg:nickname
     execute as @p[tag=Entry] at @s run playsound entity.arrow.hit_player record @s
     tag @s remove Reception
     tag @p[tag=Entry] add Accepted

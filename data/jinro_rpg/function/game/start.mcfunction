@@ -160,3 +160,8 @@
     execute if data storage jinro_rpg: {Setting:{Debug:"Off"}} run gamerule sendCommandFeedback false
     #execute if data storage jinro_rpg: {Setting:{Debug:"ON"}} run gamerule sendCommandFeedback true
     data modify storage jinro_rpg: State set value "試合中"
+
+
+##Plugin
+    scoreboard players set #Plugin Znsi.Plugin 1
+    

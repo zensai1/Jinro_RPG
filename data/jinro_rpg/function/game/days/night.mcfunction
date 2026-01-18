@@ -24,6 +24,7 @@
     execute if score *** Znsi.SelectMap matches 3 as @e[tag=Boiling_Point,tag=Map3] at @s run summon skeleton ~ ~ ~ {Health:2.0f}
     execute if score *** Znsi.SelectMap matches 4 as @e[tag=Boiling_Point,tag=Map4] at @s run summon skeleton ~ ~ ~ {Health:2.0f}
     execute if score *** Znsi.SelectMap matches 5 as @e[tag=Boiling_Point,tag=Map5] at @s run summon skeleton ~ ~ ~ {Health:2.0f}
+    execute if score *** Znsi.SelectMap matches 6 as @e[tag=Boiling_Point,tag=Map6] at @s run summon skeleton ~ ~0.5 ~ {Health:2.0f}
 
 
 ##スケルトン強化

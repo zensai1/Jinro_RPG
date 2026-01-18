@@ -7,7 +7,7 @@
     
 ##内部処理
     scoreboard players set @s Auto.Mute 2
-    scoreboard players set @s Znsi.MoveCH 2
+    #scoreboard players set @s Znsi.MoveCH 2
     tag @a remove Perpetrator
     tag @a remove Attacker
     tag @e[type=marker] remove Perpetrator

@@ -5,10 +5,7 @@
 
 
 ##エントリー
-    execute as @e[type=interaction,distance=..10,tag=Reception] at @s if data storage jinro_rpg: {State:"待機中"} if data entity @s interaction on target run tag @s add Temp_Tag
-    execute as @e[type=interaction,distance=..10,tag=Reception] at @s if data storage jinro_rpg: {State:"待機中"} if data entity @s interaction as @a[tag=Temp_Tag] run function #oh_my_dat:please
-    execute as @e[type=interaction,distance=..10,tag=Reception] at @s if data storage jinro_rpg: {State:"待機中"} if data entity @s interaction as @a[tag=Temp_Tag] run tag @s remove Temp_Tag
-    execute as @e[type=interaction,distance=..10,tag=Reception] at @s if data storage jinro_rpg: {State:"待機中"} if data entity @s interaction run function jinro_rpg:system/sign/entry with storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].MyInfo
+    execute as @e[type=interaction,distance=..10,tag=Reception] at @s if data storage jinro_rpg: {State:"待機中"} if data entity @s interaction run function jinro_rpg:system/sign/entry
 
 
 ##情報リセット(OP限定)
@@ -16,7 +13,7 @@
 
 
 ##名前変更
-    execute as @e[type=interaction,distance=..10,tag=!Reception,tag=Sign] at @s if data storage jinro_rpg: {State:"待機中"} if data entity @s interaction run function jinro_rpg:system/sign/rename
+    #execute as @e[type=interaction,distance=..10,tag=!Reception,tag=Sign] at @s if data storage jinro_rpg: {State:"待機中"} if data entity @s interaction run function jinro_rpg:system/sign/rename
 
 
 ##占い
